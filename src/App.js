@@ -43,16 +43,16 @@ function App() {
 
   return (
     <main>
-      <h1>Shopify Challenge - Fun with OpenAI!</h1>
+      <header>
+        <h1>Shopify Challenge - Fun with Open AI!</h1>
+      </header>
       <form onSubmit={handleSubmit}>
-        <label>
-          Prompt:
-          <textarea
-            name="prompt"
-            onChange={handleChange}
-            placeholder="Enter your prompt"
-          />
-        </label>
+        <label>Enter a prompt for the Open AI to complete:</label>
+        <textarea
+          name="prompt"
+          onChange={handleChange}
+          placeholder="Enter your prompt"
+        />
         <button id="submit-button" type="submit">
           Submit
         </button>
@@ -60,10 +60,14 @@ function App() {
       <div id="results">
         {openAIData.map((item) => {
           return (
-            <>
-              <p>Prompt: {item.prompt}</p>
-              <p>Result: {item.result}</p>
-            </>
+            <div className="result-item">
+              <p>
+                <span>Prompt:</span> {item.prompt}
+              </p>
+              <p>
+                <span>Result:</span> {item.result}
+              </p>
+            </div>
           );
         })}
       </div>

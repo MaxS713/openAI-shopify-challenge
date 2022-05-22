@@ -1,0 +1,46 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  background-color: #03256C;
+  padding:1rem;
+  text-align: center;
+  width:100vw;
+}
+
+form{
+  margin-top:10px;
+  display: flex;
+  flex-direction: column;
+  width:30vw;
+  gap:5px;
+}
+
+form label{
+  font-weight: 600;
+}
+
+form textarea{
+  min-height: 15vh;
+  padding:1rem;
+}
+
+.result-item{
+  background-color: #2541B2;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 10px 10px auto 10px;
+}
+
+.result-item span{
+  font-style: normal;
+  font-weight: 600;
+}
+
+.result-item p{
+  font-style: italic;
+}
