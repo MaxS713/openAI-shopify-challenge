@@ -34,6 +34,7 @@ form textarea{
   border-radius: 5px;
   padding: 0.5rem;
   margin: 10px 10px auto 10px;
+  width:60vw;
 }
 
 .result-item span{
@@ -43,4 +44,10 @@ form textarea{
 
 .result-item p{
   font-style: italic;
+}
+
+#engine-choice{
+  position: absolute;
+  top:30px;
+  right: 30px;
 }
